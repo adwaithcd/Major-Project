@@ -14,7 +14,6 @@ from keras.layers import Input
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import glob
-# import cv2
 import h5py
 import os
 import json
