@@ -86,14 +86,14 @@ print (" confusion matrix")
 labels = sorted(list(os.listdir(train_path)))
 
 a = precision_score(testLabels,preds)
-print("precision is: ",a)
+print("precision: ",a)
 
 # precision, recall, thresholds = precision_recall_curve(testLabels,preds)
 
 # print("precision is: ",precision)
 # print("recall is: ",recall)
 
-print("average_precision_score is: ",average_precision_score(testLabels,preds))
+print("average_precision_score : ",average_precision_score(testLabels,preds))
 
 fpr, tpr, thresholds = roc_curve(testLabels,preds)
 roc_auc = auc(fpr, tpr)
